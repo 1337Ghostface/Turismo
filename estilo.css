@@ -1,0 +1,45 @@
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+body{
+    background-color: rgb(172, 171, 171);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: white;
+    width: 90%;
+    text-align: center;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    background-color: blue;
+    color: white;
+
+}
+
+.linha {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    width: 900px;
+}
+
+.coluna-interna {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
