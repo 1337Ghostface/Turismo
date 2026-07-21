@@ -85,43 +85,36 @@ section{
     margin-bottom: 20px;
 }
 
-/* Sidebar Container Layout */
 .fixed-sidebar-map {
-  position: fixed !important; /* Force browser to treat it as fixed */
-  top: 150px;                 /* Increased height slightly to clear site headers */
+  position: fixed !important;
+  top: 150px;
   right: 0;                  
   width: 250px;              
-  z-index: 99999;             /* Super high index to ensure it sits on top of all page elements */
+  z-index: 99999;
   
-  /* Smooth, natural animation speed */
   transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
   
-  /* Hides the map completely off the right edge */
   transform: translateX(100%); 
 }
 
-/* Slides map fully into view on hover */
 .fixed-sidebar-map:hover {
   transform: translateX(0); 
 }
 
-/* Map Image Styles */
 .fixed-sidebar-map img {
-  width: 250px !important;    /* Forces image to stay precisely 250px for your coordinates */
+  width: 250px !important;
   height: auto !important;
   display: block !important;
   
-  /* Makes pure white backgrounds completely transparent */
   mix-blend-mode: multiply; 
 }
 
-/* Visual Pull-Out Tab */
 .map-tab {
   position: absolute;
-  left: -100px;              /* Pushes the tab out to the left of the hidden map */
+  left: -100px;
   top: 20px;                 
   width: 100px;
-  background: #004b23;       /* Portugal Green */
+  background: #004b23;
   color: #ffffff;
   padding: 12px 5px;
   text-align: center;
@@ -129,6 +122,25 @@ section{
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 8px 0 0 8px; /* Rounded outer left corners */
+  border-radius: 8px 0 0 8px;
   box-shadow: -3px 3px 10px rgba(0,0,0,0.3);
+}
+
+form{
+  background-color: #9c9c9c;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 5%;
+}
+
+label{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.active{
+  font-weight: bold;
 }
